@@ -85,3 +85,44 @@ merupakan tipe data angka bilangan bulat(.)-->
 	$data = ["nama"=>"ega", "umur"=>22,];
     echo $data["umur"];
 ?><br>
+
+<!--- Perulangan -->
+<!--- for -->
+<!--- perulangan yang bisa kita atur jumlah pengulangannya dengan menggunakan variabel.
+Contoh:-->
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    echo "Ini adalah perulangan ke-$i<br>";
+}
+?><br>
+<!--- Perulangan -->
+<!--- for -->
+<!--perulangan yang terus berjalan selama kondisi tertentu terpenuhi. Contoh:-->
+
+<?php
+$i = 0;
+while ($i < 10) {
+    echo "Ini adalah perulangan ke-$i<br>";
+    $i++;
+}
+?><br>
+
+<!--- if else -->
+
+<?php
+// Membuat variabel $warna dengan nilai null
+$warna = null;
+
+// Memeriksa apakah $warna null atau bukan null
+if ($warna == null) {
+    // Jika null, maka tampilkan pesan "Warnanya hitam"
+    echo "Warnanya hitam";
+} elseif ($warna != null) {
+    // Jika bukan null, maka tampilkan warnanya sesuai nilai $warna
+    echo $warna;
+} else {
+    // Jika semua kondisi gagal, maka tampilkan pesan "Warnanya tidak diketahui"
+    echo "Warnanya tidak diketahui";
+}
+?>
